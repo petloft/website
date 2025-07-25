@@ -109,7 +109,7 @@
 -----------------------------------------------------------------------------------*/
 /* General Style */
 
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anybody:wght@400;500;600;700;800;900&display=swap');
 
 body {
@@ -144,13 +144,13 @@ a {
 }
 
 h1 {
-    font-family: 'DynaPuff', sans-serif;
+    font-family: 'DM', sans-serif;
     font-size: 76px;
     font-weight: 600;
 }
 
 h2 {
-    font-family: 'DynaPuff', sans-serif;
+    font-family: 'DM', sans-serif;
     font-size: 60px;
     font-weight: 600;
 }
@@ -1444,7 +1444,7 @@ section {
 
 .count-text span {
     font-size: 80px;
-    font-family: 'DynaPuff', sans-serif;
+    font-family: 'DM', sans-serif;
     font-weight: 600;
 }
 

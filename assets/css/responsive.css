@@ -14,7 +14,7 @@
     width: 443px;
   }
   table.shop_table tr td {
-    margin: 0px !important;
+    margin: 0 !important;
   }
   .works h4 {
     font-size: 24px;
@@ -94,7 +94,7 @@
     padding-bottom: 18px;
   }
   .blog-details ul.list  {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
   .home-visit {
     overflow: hidden;
@@ -276,10 +276,10 @@
     font-size: 14px;
   }
   .content-us span {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .head-office p {
-    padding-bottom: 0px;
+    padding-bottom: 0;
 	}
   .content-us > svg {
     right: 30%;
@@ -335,10 +335,9 @@
   }
 	.quotation {
     width: 81%;
-    padding: 80px 104px;
-    border-radius: 50%;
-    padding-right: 143px;
-    margin-left: 0%;
+      border-radius: 50%;
+      padding: 80px 143px 80px 104px;
+      margin-left: 0;
     margin-top: 22px;
 	}
 	.quotation i.quotat {
@@ -402,8 +401,7 @@
     font-size: 12px;
   }
   .dog-walker-text {
-    padding: 120px 130px;
-    padding-left: 309px;
+    padding: 120px 130px 120px 309px;
   }
   .dog-walker-text form input {
     margin-bottom: 10px;
@@ -427,10 +425,10 @@
     padding-bottom: 30px;
   }
   .rated ul.star li {
-    letter-spacing: 0px;
+    letter-spacing: 0;
     line-height: 11px;
     font-size: 12px;
-    padding: 0px 2px;
+    padding: 0 2px;
   }
   .add-to-cart a {
     font-size: 16px;
@@ -624,7 +622,7 @@
     justify-content: center;
   }
   .logo .phone a, .logo .phone p {
-    padding-left: 0px;
+    padding-left: 0;
     font-size: 16px;
   }
   footer .phone i {
@@ -689,9 +687,9 @@
     display: none;
   }
 	.bottom-bar {
-    box-shadow: 0px 15px 24px -6px rgba(0,0,0,0);
-    -webkit-box-shadow: 0px 15px 24px -6px rgb(0 0 0 / 0%);
-    -moz-box-shadow: 0px 15px 24px -6px rgba(0,0,0,0);
+    box-shadow: 0 15px 24px -6px rgba(0,0,0,0);
+    -webkit-box-shadow: 0 15px 24px -6px rgb(0 0 0 / 0%);
+    -moz-box-shadow: 0 15px 24px -6px rgba(0,0,0,0);
 	}
 	header.three {
     background-color: transparent;
@@ -703,7 +701,7 @@
     width: 60%;
 	}
 	form.subscribe button.button {
-    top: 30.5px;
+    top: 31px;
 	}
 	.hero-three-text h2 {
     font-size: 50px;
@@ -730,9 +728,8 @@
   }
   .hero-two-slider.owl-carousel .owl-item img {
     width: 70%;
-    margin: auto;
-    margin-bottom: 30px;
-	}
+    margin: auto auto 30px;
+  }
 	.hero-two-text {
     text-align: center;
 	}
@@ -748,7 +745,7 @@
     right: 0;
     position: relative;
     width: 100%;
-    bottom: 0%;
+    bottom: 0;
 	}
   .hero-two-text p {
     padding-bottom: 20px;
@@ -777,7 +774,7 @@
     background-color: #fff;
 	}
 	.bottom-bar {
-    padding: 10px 0px;
+    padding: 10px 0;
 	}
 	.hero-one-slider.owl-carousel .owl-item img {
     width: 58%;
@@ -1001,9 +998,8 @@
     padding: 82px 14px;
 	}
 	.healthy-product-img h6 {
-    padding: 16px 30px;
-    padding-right: 41px;
-	}
+      padding: 16px 41px 16px 30px;
+    }
 	.team-working {
     padding: 70px 36px;
     margin-top: 90px;
@@ -1028,9 +1024,7 @@
   }
   .dog-walker-text {
     margin-left: -281px;
-    padding: 100px 194px;
-    padding-left: 320px;
-    padding-right: 107px;
+    padding: 100px 107px 100px 320px;
   }
   .client-slider.owl-carousel .owl-item img {
     width: auto;
@@ -1066,10 +1060,8 @@
     margin: 6px;
 	}
 	.home-visit {
-    padding: 90px;
-    padding-left: 140px;
-    padding-right: 75px;
-  }
+      padding: 90px 75px 90px 140px;
+    }
   .provide-img img {
     width: 150px;
 	}
@@ -1132,7 +1124,7 @@
     margin-bottom: 10px;
   }
   form.subscribe button.button {
-    top: 32.5px;
+    top: 33px;
   }
   .what-our {
     text-align: center;
@@ -1409,9 +1401,8 @@
 	.video {
     position: relative;
     right: 0;
-    margin: auto;
-    margin-top: 40px;
-	}
+      margin: 40px auto auto;
+    }
 	textarea {
 		margin-top: 0;
 	}
@@ -1496,8 +1487,7 @@
     margin-bottom: 40px;
 	}
 	footer.two {
-    background-position: right;
-    background-repeat: no-repeat;
+      background-repeat: no-repeat;
     position: relative;
     margin-top: -70px;
     overflow: hidden;
@@ -1577,7 +1567,7 @@
     padding: 40px;
 	}
 	.mockup h3 {
-    margin-right: 0px;
+    margin-right: 0;
     width: 100%;
 	}
 	.mockup-text {
@@ -1670,7 +1660,7 @@
     font-size: 18px;
   }
   #countdown {
-    margin-top: 0px;
+    margin-top: 0;
   }
   .healthy-product ul.list {
     padding-top: 10px;
@@ -1694,9 +1684,8 @@
 	}
 	.package.two figure {
     width: 60%;
-    margin: auto;
-    margin-top: 20px;
-	}
+      margin: 20px auto auto;
+    }
 	.package-text h4 {
     font-size: 18px;
 	}
@@ -1724,7 +1713,7 @@
     margin-top: 20px;
 	}
 	.comment li img {
-    left: 0%;
+    left: 0;
   }
   ul.instagram-posts img {
     height: 140px;
@@ -1748,13 +1737,13 @@
     flex-wrap: wrap;
 	}
 	.comment li {
-    margin-left: 0px;
+    margin-left: 0;
   }
 	.quotation {
     width: 100%;
     padding: 0;
     border-radius: 50%;
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 22px;
     border: 0;
 	}
@@ -1769,9 +1758,8 @@
 	    width: 89%;
 	}
 	.comment-data {
-    padding: 0;
-    padding-top: 20px;
-	}
+      padding: 20px 0 0;
+    }
 	.blog-details p {
     padding-top: 10px !important;
     font-size: 16px;
@@ -1784,7 +1772,7 @@
     height: 45px;
     position: relative;
     top: -4%;
-    left: 0%;
+    left: 0;
     transform: rotate(0deg);
 	}
 	.quotation img.quotation-girl {
@@ -1987,13 +1975,13 @@
     line-height: 28px;
   }
   .package:hover .package-text > i {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .copyright p {
     text-align: center;
   }
 	.hero-three img.img-3 {
-    bottom: 0%;
+    bottom: 0;
   }
   .section-healthy-product {
     background-image: none !important;
@@ -2160,15 +2148,15 @@
     font-size: 12px;
 	}
 	.rated ul.star li {
-    letter-spacing: 0px;
+    letter-spacing: 0;
     line-height: 10px;
     font-size: 10px;
-    padding: 0px 2px;
+    padding: 0 2px;
 	}
 	.client-text {
-    top: 0%;
+    top: 0;
     width: 100%;
-    left: 0%;
+    left: 0;
     position: relative;
 	}
 	.insta-img i {
@@ -2271,7 +2259,6 @@
   	display: none;
   }
   .works.pages .works-img {
-    margin-right: 0px;
     margin: auto;
 	}
 	.works.pages {
@@ -2286,7 +2273,7 @@
     padding: 30px;
 	}	
 	.social-media-Intege {
-    margin-bottom: 0px; 
+    margin-bottom: 0;
 	}
 	ul.list li img {
     padding-right: 8px;
@@ -2307,7 +2294,7 @@
   }
 	.looking form {
     width: 100%;
-    top: 0%;
+    top: 0;
     padding: 30px;
     position: relative;
 	}
@@ -2354,7 +2341,7 @@
     transform: translateX(-16px);
   }
   .comment-data span {
-    padding-left: 0px;
+    padding-left: 0;
     display: block;
   }
   .blog-text-two h3 {
@@ -2421,7 +2408,7 @@
     right: -10px;
 	}
 	.slider-categorie .owl-nav {
-    margin-top: 0px;
+    margin-top: 0;
     position: relative;
 	}
 	.slider-categorie .owl-dots{
@@ -2536,7 +2523,7 @@
     width: 65%;
   }
   form.subscribe button.button {
-    top: 33.5px;
+    top: 34px;
   }
   .history-data:before {
     width: 14px;
