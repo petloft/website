@@ -614,11 +614,11 @@ a.search-btn svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fa441d;
+    background-color: #B27C5C;
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    border: 3px solid #fa441d;
+    border: 3px solid #B27C5C;
 }
 
 .hamburger-icon:hover {
@@ -761,7 +761,7 @@ a.search-btn svg {
 }
 
 .cart-popup .cart-btns a.checkout {
-    border: 3px solid #fa441d;
+    border: 3px solid #B27C5C;
 }
 
 .cart-popup .cart-btns a:hover {
@@ -812,7 +812,7 @@ a.search-btn svg {
 }
 
 .cart-popup .cart-btns a.checkout:hover {
-    border-color: #fa441d;
+    border-color: #B27C5C;
 }
 
 .donation .light-bg img {
@@ -2331,7 +2331,7 @@ header.two .phone a, header.two .ordering a, header.two .time i, header.two .log
 }
 
 header.two .phone a:hover, header.two .ordering a:hover, header.two .login a:hover {
-    color: #fa441d;
+    color: #B27C5C;
 }
 
 header.two .ordering .line {
@@ -2643,7 +2643,7 @@ ul.list li:last-child {
 }
 
 .nav-pills .nav-link.active svg {
-    fill: #fa441d;
+    fill: #B27C5C;
 }
 
 button.nav-link i {
@@ -2660,7 +2660,7 @@ button.nav-link i {
 
 button.nav-link.active i {
     background-color: #fff;
-    border: 4px solid #fa441d;
+    border: 4px solid #B27C5C;
 }
 
 .nav-pills .nav-link {
@@ -2678,7 +2678,7 @@ button.nav-link.active i {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fa441d;
+    color: #B27C5C;
     background-color: transparent;
     font-weight: 600;
 }
@@ -2891,7 +2891,7 @@ li.option.selected.focus {
 .range-slider_thumb {
     width: 40px;
     height: 40px;
-    border: 5px solid #fa441d;
+    border: 5px solid #B27C5C;
     border-radius: 50%;
     position: absolute;
     left: 0;
@@ -2903,7 +2903,7 @@ li.option.selected.focus {
     align-items: center;
     font-weight: 700;
     font-size: 16px;
-    color: #fa441d;
+    color: #B27C5C;
     z-index: 2;
 }
 
@@ -2922,7 +2922,7 @@ li.option.selected.focus {
     position: absolute;
     height: 0.5vmin;
     width: 0;
-    background-color: #fa441d;
+    background-color: #B27C5C;
 }
 
 .looking form button.button {
@@ -3329,7 +3329,7 @@ footer.two .copyright {
 
 footer.two a.get {
     border-bottom: 3px solid;
-    color: #fa441d;
+    color: #B27C5C;
     font-weight: 800;
 }
 
@@ -3339,7 +3339,7 @@ header.three .phone a, header.three .ordering a, header.three .login a, header.t
 }
 
 header.three .phone a:hover, header.three .ordering a:hover, header.three .login a:hover {
-    color: #fa441d;
+    color: #B27C5C;
 }
 
 header.three .navbar-links li.navbar-dropdown .dropdown {
@@ -3968,7 +3968,7 @@ footer.three .logo {
 
 footer.three a.get {
     border-bottom: 3px solid;
-    color: #fa441d;
+    color: #B27C5C;
     font-weight: 800;
 }
 
@@ -3990,7 +3990,7 @@ footer.three .copyright {
 }
 
 .deal-of-the-week .add-to-cart a.button:hover {
-    color: #fa441d !important;
+    color: #B27C5C !important;
 }
 
 /* 53. sidebar */
@@ -4799,7 +4799,7 @@ form.variations_form .add-to-cart {
 
 form.variations_form .add-to-cart a:hover {
     background-color: transparent;
-    color: #fa441d !important;
+    color: #B27C5C !important;
 }
 
 form.variations_form .add-to-cart a.heart-wishlist:hover {
@@ -5078,7 +5078,7 @@ h3.history {
     position: absolute;
     width: 14px;
     height: 100px;
-    background: #fa441d;
+    background: #B27C5C;
     bottom: -39%;
 }
 
@@ -5537,7 +5537,7 @@ ul.category li:hover span {
     width: 20px;
     margin: -5px 0 0;
     background-color: #fff;
-    border: 5px solid #fa441d;
+    border: 5px solid #B27C5C;
     cursor: pointer;
     pointer-events: all;
     z-index: 100;
@@ -6029,7 +6029,7 @@ i#nav-icon4 {
 }
 
 .mobile-nav ul.social-icon i {
-    background-color: #fa441d;
+    background-color: #B27C5C;
     color: #fff;
 }
 

@@ -390,7 +390,7 @@ $(function() {
   scrollProgress.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
   });
-  scrollProgress.style.background = `conic-gradient(#fa441d ${scrollValue}%, #fff ${scrollValue}%)`;
+  scrollProgress.style.background = `conic-gradient(#B27C5C ${scrollValue}%, #fff ${scrollValue}%)`;
 };
 
 window.onscroll = calcScrollValue;
