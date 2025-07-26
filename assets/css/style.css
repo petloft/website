@@ -631,6 +631,10 @@ a.search-btn svg {
         padding-top: 60px;
     }
 
+    .hero-section .button {
+        margin-bottom: 15px !important;
+    }
+
 }
 
 .hamburger-icon {
@@ -879,6 +883,7 @@ header .line {
 
 .hero-text {
     padding-top: 100px;
+    padding-bottom: 50px !important;
 }
 
 .owl-item.active .hero-img img.img-1 {
@@ -2754,6 +2759,7 @@ button.nav-link.active i {
 }
 
 .logodata.owl-carousel .owl-item img {
+    padding: 10px 10px;
     width: auto;
     margin: auto;
 }
