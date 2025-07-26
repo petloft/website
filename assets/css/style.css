@@ -112,6 +112,11 @@
 
 body {
     font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+    line-height: 30px;
+    position: relative;
     overflow-x: hidden;
 }
 
