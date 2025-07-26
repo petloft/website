@@ -170,7 +170,7 @@ jQuery(document).ready(function($){
         jQuery('.bar-menu').click(function($){
 
             jQuery('#mobile-nav').toggleClass('open');
-            jQuery('#mobile-nav').toggleClass('hmburger-menu');
+            jQuery('#mobile-nav').toggleClass('hamburger-menu');
             jQuery('#mobile-nav').show();
 
         });

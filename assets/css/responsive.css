@@ -1,3 +1,12 @@
+ @media (max-width: 768px) {
+       #mobile-nav {
+           display: block !important; /* affiché */
+       }
+       nav.navbar {
+           display: none; /* cacher le menu desktop */
+       }
+   }
+
 @media(max-width: 1400px){
 	p {
     font-size: 16px;

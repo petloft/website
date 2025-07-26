@@ -609,6 +609,24 @@ a.search-btn svg {
     margin-right: 18px;
     line-height: 0;
 }
+.hamburger-menu {
+    display: flex;
+    justify-content: flex-end; /* Alignement à droite */
+    align-items: center;      /* Alignement vertical centré */
+    padding-right: 15px;      /* Ajout d'un padding à droite */
+}
+
+/* Assurez-vous que la barre du menu fonctionne bien sur écran mobile */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        right: 10px;
+        top: 10px /* Affichage flex pour garantir la mise en page adaptable */
+    }
+    .mobile-nav {
+        padding-top: 60px;      /* Laisser de l’espace sous l’icône */
+    }
+
+}
 
 .hamburger-icon {
     display: flex;
@@ -5846,12 +5864,12 @@ form.add-review.comment.leave-comment textarea {
 /* 86. mobile-nav */
 .mobile-nav {
     position: fixed;
-    display: none;
+    display: flex;
     top: 0;
     left: 0;
-    width: 30%;
+    width: 100%;
     height: 100%;
-    background-color: #940c69;
+    background-color: #B27C5C;
     padding: 50px 40px 15px;
     z-index: 5;
     transition: 0.25s ease-in-out;
@@ -6150,7 +6168,13 @@ li.menu-item-has-children.active {
 
 .bar-menu {
     display: none;
-    position: relative;
+    position: absolute;         /* Position absolue pour un contrôle précis */
+    right: 15px;                /* Aligne l'icône 15px depuis le bord droit */
+    top: 15px;                  /* Positionne l'icône 15px depuis le haut */
+    z-index: 10000;             /* Assure qu'il est au premier plan */
+    cursor: pointer;            /* Curseur interactif */
+    align-items: center;        /* Centrage vertical de l'icône */
+    justify-content: center;
 }
 
 .bar-menu i {
