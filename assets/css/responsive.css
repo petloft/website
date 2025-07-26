@@ -6,9 +6,32 @@
     nav.navbar {
         display: none; /* cacher le menu desktop */
     }
+
+    .hero-img img {
+        display: block;
+        margin: auto;
+    }
+
+    .hero-text {
+        padding: 20px; /* Ajustement pour les tailles plus petites */
+        text-align: center; /* Centrer le texte sur des écrans réduits */
+    }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @media (max-width: 1400px) {
+    .hero-img img {
+        display: block;
+        margin: auto;
+    }
+
+
     p {
         font-size: 16px;
     }
@@ -688,11 +711,6 @@
     .hero-section {
         padding-top: 145px;
         padding-bottom: 30px;
-
-    }
-
-    .hero-section .button {
-        padding-bottom: 100px;
     }
 
     .hero-one-slider.owl-carousel .owl-item img.img-4,
@@ -1574,10 +1592,6 @@
         width: 46%;
         top: 2%;
         left: 10%;
-    }
-
-    .hero-img {
-        padding-top: 40px;
     }
 
     .team-details {
