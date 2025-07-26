@@ -451,6 +451,7 @@ header {
     align-items: center;
     background-color: white;
     padding: 5px 10px;
+    border-radius: 20%; /* Makes the logo circular */
     box-shadow: 0 15px 24px -6px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 15px 24px -6px rgb(0 0 0 / 5%);
     -moz-box-shadow: 0 15px 24px -6px rgba(0, 0, 0, 0.5);
