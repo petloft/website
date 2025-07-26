@@ -1497,16 +1497,16 @@ ul.social-icon li {
 }
 
 ul.social-icon i {
-    width: 46px;
-    height: 46px;
+    width: 35px;
+    height: 35px;
     justify-content: center;
     align-items: center;
     display: flex;
     border-radius: 51%;
     font-size: 18px;
-    color: black;
+    color: #272727;
     padding: 0;
-    background-color: #feda46;
+    background-color: #B27C5C;
 }
 
 ul.social-icon i:hover {
