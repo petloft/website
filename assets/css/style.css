@@ -107,13 +107,11 @@
 
     
 -----------------------------------------------------------------------------------*/
-/* General Style */
 
-@import url('https://fonts.googleapis.com/css2?family=DM:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dosis:wght@200..800&display=swap');
 
 body {
-    font-family: 'Anybody', sans-serif;
+    font-family: 'Dosis', sans-serif;
     overflow-x: hidden;
 }
 
@@ -144,13 +142,13 @@ a {
 }
 
 h1 {
-    font-family: 'DM', sans-serif;
+    font-family: 'Dosis', serif;
     font-size: 76px;
     font-weight: 600;
 }
 
 h2 {
-    font-family: 'DM', sans-serif;
+    font-family: 'Dosis', serif;
     font-size: 60px;
     font-weight: 600;
 }
@@ -344,7 +342,7 @@ figure {
     }
 }
 
-/* 02. top-bar */
+
 header {
     position: absolute;
     width: 100%;
@@ -453,7 +451,7 @@ header {
     -moz-box-shadow: 0 15px 24px -6px rgba(0, 0, 0, 0.5);
 }
 
-/* 03. navbar */
+
 .overlay {
     position: fixed;
     top: 0;
@@ -468,13 +466,13 @@ header {
 
 .navbar {
     flex-grow: 1;
-    text-align: left; /* Le menu s'aligne naturellement à côté du logo */
+    text-align: left;
     display: flex;
     justify-content: center;
 }
 
 .navbar-logo {
-    color: #ff3f34;
+    color: #936351;
     text-decoration: none;
     font-size: 25px;
     padding: 0 20px;
@@ -609,21 +607,23 @@ a.search-btn svg {
     margin-right: 18px;
     line-height: 0;
 }
+
 .hamburger-menu {
     display: flex;
-    justify-content: flex-end; /* Alignement à droite */
-    align-items: center;      /* Alignement vertical centré */
-    padding-right: 15px;      /* Ajout d'un padding à droite */
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
 }
 
-/* Assurez-vous que la barre du menu fonctionne bien sur écran mobile */
+
 @media (max-width: 768px) {
     .hamburger-menu {
         right: 10px;
-        top: 10px /* Affichage flex pour garantir la mise en page adaptable */
+        top: 10px
     }
+
     .mobile-nav {
-        padding-top: 60px;      /* Laisser de l’espace sous l’icône */
+        padding-top: 60px;
     }
 
 }
@@ -680,7 +680,7 @@ a.search-btn svg {
     font-size: 10px;
 }
 
-/* 04. cart popup */
+
 .cart-popup:before {
     content: "";
     width: 41%;
@@ -850,7 +850,7 @@ header .line {
     margin: 0 12px;
 }
 
-/* 05. hero-section */
+
 .hero-section {
     background-size: unset;
     padding-top: 220px;
@@ -930,7 +930,7 @@ img.img-2 {
     animation: top-bottom 3s infinite;
 }
 
-/* 06. we-provide */
+
 .dog-walker img {
     position: relative;
     z-index: 11;
@@ -1005,7 +1005,7 @@ img.haddi {
     animation: top-bottom infinite 3s;
 }
 
-/* 07. welcome-to */
+
 .pet-grooming i {
     display: inline-flex;
     align-items: center;
@@ -1042,7 +1042,7 @@ img.haddi {
     padding-bottom: 10px;
 }
 
-/* 08. heading */
+
 .heading {
     text-align: center;
     padding-bottom: 40px;
@@ -1058,7 +1058,7 @@ img.haddi {
     text-transform: uppercase;
 }
 
-/* 09. food-categorie */
+
 .food-categorie a {
     font-size: 20px;
     font-weight: bold;
@@ -1234,7 +1234,7 @@ img.haddi {
     margin-top: 16px;
 }
 
-/* 10. healthy-product */
+
 .healthy-product-img {
     background-color: #fff;
     text-align: center;
@@ -1413,7 +1413,7 @@ ul.star li {
     color: #fff;
 }
 
-/* 11. countdown */
+
 .deal-week-time {
     position: relative;
 }
@@ -1451,7 +1451,7 @@ section {
     background-size: auto;
 }
 
-/* 12. count-text */
+
 .count-text {
     text-align: center;
 }
@@ -1462,7 +1462,7 @@ section {
 
 .count-text span {
     font-size: 80px;
-    font-family: 'DM', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-weight: 600;
 }
 
@@ -1482,7 +1482,7 @@ section {
     animation: top-bottom 1s ease-in-out;
 }
 
-/* 13. social-icon */
+
 ul.social-icon {
     display: flex;
 }
@@ -1508,7 +1508,7 @@ ul.social-icon i:hover {
     color: #fff;
 }
 
-/* 14. team-working */
+
 .team-working span {
     display: block;
     font-weight: 600;
@@ -1553,7 +1553,7 @@ ul.social-icon i:hover {
     background-color: #f8f8f8;
 }
 
-/* 15. button */
+
 .button {
     background-color: #fe5716;
     display: inline-block;
@@ -1594,7 +1594,7 @@ button.button {
     transform: scale(1);
 }
 
-/* 16. dog-walker */
+
 .dog-walker {
     display: flex;
     align-items: center;
@@ -1664,7 +1664,7 @@ img.dabal-foot {
     animation: top-bottom infinite 3s;
 }
 
-/* 17. blog */
+
 .blog-style {
     position: relative;
 }
@@ -1735,7 +1735,7 @@ img.dabal-foot {
     font-size: 16px;
 }
 
-/* 18. insta-img */
+
 .insta-img {
     text-align: center;
     display: flex;
@@ -1787,7 +1787,7 @@ img.dabal-foot {
     align-items: center;
 }
 
-/* 19. image gallery footer */
+
 ul.image-gallery {
     display: flex;
     position: relative;
@@ -1823,7 +1823,7 @@ ul.image-gallery li figure img {
     height: 170px;
 }
 
-/* 20. client-text */
+
 .heading.two {
     text-align: inherit;
 }
@@ -1886,7 +1886,7 @@ i.quote {
     right: 0;
 }
 
-/* 21. rated */
+
 .rated {
     position: relative;
     display: flex;
@@ -1912,7 +1912,7 @@ i.quote {
     padding: 0 5px;
 }
 
-/* 22. footer */
+
 footer {
     position: relative;
     background-position: bottom;
@@ -1959,7 +1959,7 @@ footer .phone i {
     fill: #000000;
 }
 
-/* 23. widget-title */
+
 .widget-title {
     position: relative;
 }
@@ -2012,7 +2012,7 @@ footer .phone i {
     color: #000;
 }
 
-/* 24. call-us */
+
 .call-us {
     display: flex;
     align-items: center;
@@ -2089,11 +2089,11 @@ footer.two:before {
     -webkit-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
     -moz-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
     -o-transition: all 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
+    transition: all 1500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
     -webkit-transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
     -moz-transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
     -o-transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
+    transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
 }
 
 .search-popup {
@@ -2298,7 +2298,7 @@ span.flaticon-multiply i {
     color: #ED1C24;
 }
 
-/* 26. ul.list */
+
 ul.list li {
     font-size: 18px;
     color: #555;
@@ -2337,7 +2337,7 @@ ul.list {
     margin-right: 20px;
 }
 
-/* 27. header two  */
+
 header.two .top-bar {
     padding-top: 6px;
     padding-bottom: 6px;
@@ -2360,7 +2360,7 @@ header.two .phone i svg {
     fill: #fff;
 }
 
-/* 28. section.hero-two */
+
 .hero-two {
     position: relative;
     padding-top: 180px;
@@ -2398,7 +2398,7 @@ img.hero-shaps-4 {
 
 }
 
-/* 29. .pets-icon */
+
 .pets-icon {
     background-color: #ffeded;
     width: 100%;
@@ -2471,7 +2471,7 @@ img.hero-shaps-4 {
     font-weight: bold;
 }
 
-/* 30. package */
+
 .package figure > img {
     border-radius: 50%;
     padding: 12px;
@@ -2525,7 +2525,7 @@ ul.list li:last-child {
     padding-bottom: 0;
 }
 
-/* 31. home-visit */
+
 .home-visit {
     position: relative;
     display: flex;
@@ -2583,7 +2583,7 @@ ul.list li:last-child {
     }
 }
 
-/* 32. recent-products */
+
 .recent-products-data {
     width: 20%;
     position: relative;
@@ -2652,7 +2652,7 @@ ul.list li:last-child {
     margin: 0 30px;
 }
 
-/* 33. tab nav */
+
 .nav-pills svg {
     width: 50px;
     height: auto;
@@ -2701,7 +2701,7 @@ button.nav-link.active i {
     font-weight: 600;
 }
 
-/* 34. provide */
+
 .provide-img img {
     border-radius: 50%;
     margin-bottom: -50px;
@@ -2753,7 +2753,7 @@ button.nav-link.active i {
     margin: auto;
 }
 
-/* 35. looking form */
+
 .looking form > ul {
     display: flex;
 }
@@ -2867,7 +2867,7 @@ li.option.selected.focus {
     font-weight: 500;
 }
 
-/* 36. range-slider */
+
 .range-slider {
     position: relative;
     width: 100%;
@@ -2952,7 +2952,7 @@ li.option.selected.focus {
     position: relative;
 }
 
-/* 37. pets */
+
 .pets img {
     border-radius: 50%;
     padding: 10px;
@@ -3006,7 +3006,7 @@ li.option.selected.focus {
     font-weight: bold;
 }
 
-/* 38. accordion */
+
 .accordion-item.active .heading {
     color: #bccbb7;
 }
@@ -3124,7 +3124,7 @@ a.heading {
     margin-bottom: 10px;
 }
 
-/* 39. faq-img */
+
 .faq-img img {
     border-radius: 50%;
     border: 11px solid #fff;
@@ -3188,7 +3188,7 @@ img.faq-shaps {
     z-index: 1;
 }
 
-/* 40. blog two */
+
 .blog-text-two h6 {
     font-size: 14px;
     line-height: 14px;
@@ -3209,7 +3209,7 @@ img.faq-shaps {
     font-size: 20px;
     font-weight: bold;
     color: #000;
-    font-family: 'Anybody', sans-serif;
+    font-family: 'Dosis', sans-serif;
     padding-top: 10px;
     line-height: 28px;
 }
@@ -3252,7 +3252,7 @@ img.faq-shaps {
     display: inline;
 }
 
-/* 41. subscribe */
+
 .subscribe {
     background-repeat: no-repeat;
     background-position: right;
@@ -3293,7 +3293,7 @@ form.subscribe input[type="text"] {
     height: 62px;
 }
 
-/* 42. footer.two */
+
 footer.two {
     background-position: right;
     background-repeat: no-repeat;
@@ -3351,7 +3351,7 @@ footer.two a.get {
     font-weight: 800;
 }
 
-/* 43. hero-three */
+
 header.three .phone a, header.three .ordering a, header.three .login a, header.three .login i {
     color: #fff;
 }
@@ -3449,7 +3449,7 @@ header.three .menu-end a {
     padding-bottom: 40px;
 }
 
-/* 44. offers-banner */
+
 .offers-banner {
     background-color: #ffeded;
     display: flex;
@@ -3493,7 +3493,7 @@ img.offers-banner {
     color: #000;
 }
 
-/* 45. form.looking-form */
+
 form.looking-form {
     width: 100%;
 }
@@ -3593,7 +3593,7 @@ svg.golo {
     }
 }
 
-/* 46. cart */
+
 .cart {
     display: flex;
     align-items: center;
@@ -3682,7 +3682,7 @@ svg.golo {
     right: 10px;
 }
 
-/* 47. deal-of-the-week.two */
+
 .deal-of-the-week.two {
     background-color: #ffeded;
     position: relative;
@@ -3719,7 +3719,7 @@ a.heart-wishlist:hover {
     width: 90%;
 }
 
-/* 48. works */
+
 .works {
     text-align: center;
 }
@@ -3796,7 +3796,7 @@ a.heart-wishlist:hover {
     padding: 3px 5px;
 }
 
-/* 49. quotation */
+
 .quotation {
     position: relative;
     border: 5px solid #feda46;
@@ -3880,7 +3880,7 @@ a.heart-wishlist:hover {
     display: none;
 }
 
-/* 50. mockup */
+
 .mockup {
     display: flex;
     align-items: center;
@@ -3933,7 +3933,7 @@ a.heart-wishlist:hover {
     padding-bottom: 24px;
 }
 
-/* 51. footer-provide */
+
 .footer-provide img {
     display: block;
     margin: auto;
@@ -3965,7 +3965,7 @@ a.heart-wishlist:hover {
     margin-bottom: 80px;
 }
 
-/* 52. footer.three */
+
 footer.three .widget-title h3,
 footer.three .widget-title li a,
 footer.three .logo > p,
@@ -4011,7 +4011,7 @@ footer.three .copyright {
     color: #B27C5C !important;
 }
 
-/* 53. sidebar */
+
 .sidebar h3 {
     font-size: 22px;
     line-height: 20px;
@@ -4057,7 +4057,7 @@ ul.Meta li.end a {
     border: 0;
 }
 
-/* 54. recent-post */
+
 .recent-post img {
     margin-right: 20px;
 }
@@ -4089,7 +4089,7 @@ ul.recent-post li.end {
     padding: 0;
 }
 
-/* 55. ul.categories */
+
 ul.categories li a {
     display: flex;
     align-items: center;
@@ -4111,7 +4111,7 @@ ul.quick-links li a {
     font-weight: 600;
 }
 
-/* 56. ul.quick-links */
+
 ul.quick-links li {
     padding-bottom: 16px;
 }
@@ -4140,7 +4140,7 @@ ul.Meta li.end a {
     border: 0;
 }
 
-/* 57. tags-cloud */
+
 .tags-cloud a {
     font-size: 16px;
     font-weight: bold;
@@ -4183,7 +4183,7 @@ ul.tags-cloud li a {
     z-index: 1;
 }
 
-/* 58. sidebar.sidebar-two */
+
 .sidebar.sidebar-two h3 {
     color: white;
 }
@@ -4214,7 +4214,7 @@ ul.Meta i {
     padding-right: 10px;
 }
 
-/* 59. instagram-posts */
+
 .instagram-posts {
     margin-top: 20px;
     display: flex;
@@ -4276,7 +4276,7 @@ ul.instagram-posts figure:hover:before {
     padding-left: 12px;
 }
 
-/* 60. client-help */
+
 .client-help {
     margin-top: 20px;
     position: relative;
@@ -4322,7 +4322,7 @@ ul.instagram-posts figure:hover:before {
     margin-bottom: 40px;
 }
 
-/* 61. share-post */
+
 .share-post {
     display: flex;
     align-items: center;
@@ -4376,7 +4376,7 @@ ul.instagram-posts figure:hover:before {
     margin-right: 0;
 }
 
-/* 62. comment */
+
 .comment {
     padding-top: 60px;
 }
@@ -4433,7 +4433,7 @@ li.reply-comment {
     width: 89%;
 }
 
-/* 63. form.leave input */
+
 form.leave input {
     width: 100%;
     height: 60px;
@@ -4479,7 +4479,7 @@ form.leave textarea::placeholder {
     padding-top: 4px !important;
 }
 
-/* 64. banner */
+
 .banner {
     padding-top: 190px;
     padding-bottom: 30px;
@@ -4536,7 +4536,7 @@ ol.breadcrumb li a {
     right: -10px;
 }
 
-/* 65. breadcrumb */
+
 .breadcrumb-item + .breadcrumb-item::before {
     color: #000000;
 }
@@ -4570,7 +4570,7 @@ ol.breadcrumb {
     margin-bottom: 50px;
 }
 
-/* 66. pagination */
+
 .pagination {
     margin-top: 30px;
     width: fit-content;
@@ -4647,7 +4647,7 @@ ol.breadcrumb {
     color: #fff;
 }
 
-/* 67. product-info */
+
 .product-info .start {
     background-color: #feda46;
     padding: 5px 8px;
@@ -4673,7 +4673,7 @@ ol.breadcrumb {
     padding-bottom: 10px;
 }
 
-/* 68. form.variations_form */
+
 form.variations_form span {
     padding: 0;
 }
@@ -4745,7 +4745,7 @@ form.variations_form .btn {
     line-height: 0;
 }
 
-/* 69. product_meta */
+
 ul.product_meta {
     margin-top: 25px;
 }
@@ -4771,7 +4771,7 @@ ul.product_meta li a {
     text-transform: capitalize;
 }
 
-/* 70. pd-imgs */
+
 ul.pd-imgs li a {
     width: 130px;
     height: 130px;
@@ -4844,7 +4844,7 @@ ul.pd-imgs li a img {
     object-fit: contain;
 }
 
-/* 71. about-gallery-img */
+
 .about-gallery-img figure {
     position: relative;
 }
@@ -4894,7 +4894,7 @@ ul.pd-imgs li a img {
     opacity: 0;
 }
 
-/* 72. content-us */
+
 .content-us {
     text-align: center;
 }
@@ -4945,7 +4945,7 @@ ul.pd-imgs li a img {
     transform: rotate(360deg);
 }
 
-/* 73. head-office */
+
 .head-office {
     background-color: #f5f5f5;
     padding: 40px;
@@ -5020,7 +5020,7 @@ h3.awards {
     font-weight: 800;
 }
 
-/* 74. history */
+
 .heading-history p {
     font-size: 16px;
     width: 80%;
@@ -5112,7 +5112,7 @@ h3.history {
     margin-bottom: 0;
 }
 
-/* 75. works pages */
+
 .heading.works {
     width: 71%;
     margin: auto;
@@ -5180,7 +5180,7 @@ h3.history {
     background-size: cover;
 }
 
-/* 76. find-a-dog.two */
+
 .find-a-dog.two img {
     padding-bottom: 20px;
 }
@@ -5254,7 +5254,7 @@ h3.history {
     margin-bottom: 20px;
 }
 
-/* 77. team-working */
+
 .section-team .team-working {
     position: relative;
     padding: 70px 54px;
@@ -5264,7 +5264,7 @@ h3.history {
     margin-bottom: 40px;
 }
 
-/* 78. package.two */
+
 .package.two {
     display: flex;
     justify-content: space-between;
@@ -5407,7 +5407,7 @@ footer.three {
     background-repeat: repeat;
 }
 
-/* 79. team-details */
+
 .team-details {
     width: 70%;
     padding-right: 210px;
@@ -5456,7 +5456,7 @@ footer.three {
     transform: rotate(78deg);
 }
 
-/* 80. products-section */
+
 .products-section .sidebar {
     padding: 30px 30px;
 }
@@ -5496,7 +5496,7 @@ ul.category li:hover span {
     width: 100%;
 }
 
-/* 81. price-field */
+
 .price-title {
     position: relative;
     color: #000;
@@ -5578,7 +5578,7 @@ ul.category li:hover span {
 }
 
 .price-field input[type=range]::-ms-track {
-    /* IE */
+
     width: 188px;
     height: 2px;
     cursor: pointer;
@@ -5638,7 +5638,7 @@ ul.category li:hover span {
     transition-duration: 0.3s;
 }
 
-/* 82. top-products */
+
 .top-products a {
     font-size: 16px;
     font-weight: bold;
@@ -5675,7 +5675,7 @@ ul.category li:hover span {
     border: 3px solid #f2f2f2;
 }
 
-/* 83. items-number */
+
 .items-number {
     display: flex;
     align-items: center;
@@ -5712,7 +5712,7 @@ ul.category li:hover span {
     justify-content: end;
 }
 
-/* 84. ul.specification */
+
 ul.specification li {
     display: flex;
     margin-bottom: 10px;
@@ -5735,7 +5735,7 @@ ul.specification li h6 {
     margin-top: 70px;
 }
 
-/* 85. table */
+
 .table thead tr {
     background-color: #feda46 !important;
 }
@@ -5861,7 +5861,7 @@ form.add-review.comment.leave-comment textarea {
     width: auto;
 }
 
-/* 86. mobile-nav */
+
 .mobile-nav {
     position: fixed;
     display: flex;
@@ -6168,12 +6168,12 @@ li.menu-item-has-children.active {
 
 .bar-menu {
     display: none;
-    position: absolute;         /* Position absolue pour un contrôle précis */
-    right: 15px;                /* Aligne l'icône 15px depuis le bord droit */
-    top: 15px;                  /* Positionne l'icône 15px depuis le haut */
-    z-index: 10000;             /* Assure qu'il est au premier plan */
-    cursor: pointer;            /* Curseur interactif */
-    align-items: center;        /* Centrage vertical de l'icône */
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 10000;
+    cursor: pointer;
+    align-items: center;
     justify-content: center;
 }
 
@@ -6194,7 +6194,7 @@ li.menu-item-has-children.active {
     padding-left: 24px;
 }
 
-/* 86. shop_table */
+
 table.shop_table {
     width: 100%;
 }
@@ -6278,7 +6278,7 @@ table.shop_table td.product-price {
     padding: 30px;
 }
 
-/* 87. coupon-area */
+
 .coupon-area {
     padding: 45px;
     background-color: #f1f1f1;
@@ -6307,7 +6307,7 @@ table.shop_table td.product-price {
     margin-bottom: 20px;
 }
 
-/* 88. cart_totals */
+
 .cart_totals {
     text-transform: uppercase;
     padding: 54px;
@@ -6369,7 +6369,7 @@ table.shop_table_responsive tr {
     text-align: end;
 }
 
-/* 89. checkout-meta */
+
 form.checkout-meta {
     background-color: transparent;
     padding: 0;
@@ -6462,7 +6462,7 @@ form.checkout-meta .ship-address input {
     font-weight: bold;
 }
 
-/* 90. checkout-side */
+
 form.checkout-meta .checkout-side input {
     width: 0;
 }
@@ -6499,7 +6499,7 @@ form.checkout-meta .checkout-side input[type='radio']:after {
     font-weight: bold;
 }
 
-/* 91. please-donate-today */
+
 .please-donate-today {
     background-color: #26268e;
     padding: 70px;
@@ -6603,7 +6603,7 @@ span.give-currency-symbol {
     font-size: 20px;
 }
 
-/* 92. box.login */
+
 .box.login {
     background-color: #f0f0f0;
     border-radius: 30px;
@@ -6701,7 +6701,7 @@ span.give-currency-symbol {
     color: white;
 }
 
-/* 93. Go To Top */
+
 #progress {
     z-index: 1111;
     position: fixed;
@@ -6751,13 +6751,13 @@ ul.social-icon i, .team-working:hover, .team-working:before, .about-gallery-img 
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Ajustez la largeur maximale si nécessaire */
+    max-width: 1200px;
 }
 
 .logo-and-menu .logo {
     max-width: 600px;
     margin-right: 20px;
-    flex-shrink: 0; /* Empêche le logo de rétrécir */
+    flex-shrink: 0;
 }
 
 
