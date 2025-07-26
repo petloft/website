@@ -260,12 +260,12 @@ figure {
 }
 
 .dot-2 {
-    background-color: #940c69;
+    background-color: #af805d;
     animation: dot-2-move 2s ease infinite, index 6s -4s ease infinite;
 }
 
 .dot-1 {
-    background-color: #feda46;
+    background-color: #c5936d;
     animation: dot-1-move 2s ease infinite, index 6s -2s ease infinite;
 }
 
@@ -1377,11 +1377,6 @@ ul.star li {
     right: 10px;
 }
 
-.add-to-cart a.heart-wishlist, .add-to-cart a.heart-wishlist:hover {
-    background-color: #feda46;
-    color: #000 !important;
-}
-
 .healthy-product {
     margin-bottom: 50px;
 }
@@ -1981,7 +1976,7 @@ footer .phone {
 
 footer .phone i {
     height: 50px;
-    background-color: #feda46;
+    background-color: #dcb29e;
     width: 50px;
     border-radius: 50%;
     margin-right: 16px;
@@ -6798,13 +6793,12 @@ ul.social-icon i, .team-working:hover, .team-working:before, .about-gallery-img 
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 600px;
 }
 
 .centered-image img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    max-width: 50%;
+    max-height: 80%;
 }
 
 .services-item {
