@@ -6795,6 +6795,19 @@ ul.social-icon i, .team-working:hover, .team-working:before, .about-gallery-img 
     flex-shrink: 0;
 }
 
+.centered-image {
+    display: flex; /* Active le modèle flex */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 100%; /* Assure que le conteneur prend toute la largeur disponible */
+    height: 100vh; /* Ajuste le conteneur sur toute la hauteur de la fenêtre */
+}
+
+.centered-image img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur disponible */
+    max-height: 100%; /* Empêche l'image de déborder verticalement */
+    object-fit: contain; /* Maintient les proportions de l'image dans son conteneur */
+}
 
 
 
