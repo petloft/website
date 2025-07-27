@@ -459,7 +459,6 @@ header {
 }
 
 
-
 .overlay {
     position: fixed;
     top: 0;
@@ -6803,24 +6802,9 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
     list-style-position: inside;
     display: list-item;
 }
-.icon-text-wrapper {
-    display: flex; /* Utilise Flexbox pour aligner les éléments en ligne */
-    align-items: center; /* Centre verticalement les éléments */
-}
 
-.icon-text-wrapper i {
-    flex-shrink: 0; /* Empêche la réduction de taille de l'icône */
-    margin-right: 10px; /* Espace entre l'icône et le texte */
-}
-
-.icon-text-wrapper span {
-    flex-grow: 1; /* Permet au texte d'occuper tout l'espace disponible */
-    white-space: nowrap; /* Empêche le retour à la ligne */
-    overflow: hidden; /* Empêche le débordement visuel */
-    text-overflow: clip; /* Aucune coupure avec des "..." */
-}
 .services-links {
-display: flex;
+    display: flex;
     justify-content: center; /* Horizontally center the elements */
     align-items: center; /* Vertically align the elements */
     gap: 20px; /* Add spacing between button and links */
@@ -6849,3 +6833,23 @@ display: flex;
     padding-bottom: 20px;
     font-weight: bold;
 }
+
+.address {
+    display: flex; /* Active l'alignement Flexbox pour aligner facilement l'icône et le texte */
+    align-items: center; /* Aligne verticalement l'icône et le texte au centre */
+    gap: 8px; /* Espace entre l'icône et le texte (ajustez si besoin) */
+}
+
+.address i {
+    flex-shrink: 0; /* Empêche l'icône de rétrécir */
+    font-size: 18px; /* Ajustez la taille de l'icône si nécessaire */
+}
+
+.address a {
+    flex-grow: 1; /* Permet au texte de prendre tout l’espace disponible à droite de l'icône */
+    white-space: normal; /* Autorise les retours à la ligne si le texte est trop long */
+    text-decoration: none; /* Optionnel, pour supprimer l'underline des liens */
+    color: inherit; /* Conserve la couleur héritée (ou appliquez une couleur spécifique) */
+    font-size: 14px ;
+}
+
