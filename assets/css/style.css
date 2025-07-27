@@ -1,115 +1,7 @@
-/*-----------------------------------------------------------------------------------
-
-    [Master Stylesheet]
-
-    Project:    Patte | Pet Care Services HTML Template
-    
-    Version:    1.0
-
------------------------------------------------------------------------------------
-
-    [Table of contents]
-    
-
-    01. hendrio Loader Css
-    02. top-bar
-    03. navbar
-    04. cart popup
-    05. hero-section
-    06. we-provide
-    07. welcome-to
-    08. heading
-    09. food-categorie
-    10. healthy-product
-    11. countdown
-    12. count-text
-    13. social-icon
-    14. team-working
-    15. button
-    16. dog-walker
-    17. blog
-    18. insta-img
-    19. image gallery footer
-    20. client-text
-    21. rated
-    22. footer
-    23. widget-title
-    24. call-us
-    25. Search Popup
-    26. ul.list
-    27. header two
-    28. section.hero-two
-    29. pets-icon
-    30. package
-    31. home-visit
-    32. recent-products
-    33. tab nav
-    34. provide
-    35. looking form
-    36. range-slider
-    37. pets
-    38. accordion
-    39. faq-img
-    40. blog two
-    41. subscribe
-    42. footer.two
-    43. hero-three
-    44. offers-banner
-    45. form.looking-form
-    46. cart
-    47. deal-of-the-week.two
-    48. works
-    49. quotation
-    50. mockup
-    51. footer-provide
-    52. footer.three
-    53. sidebar
-    54. recent-post
-    55. ul.categories
-    56. ul.quick-links
-    57. tags-cloud
-    58. sidebar.sidebar-two
-    59. instagram-posts
-    60. client-help
-    61. share-post
-    62. comment
-    63. form.leave input
-    64. banner
-    65. breadcrumb
-    66. pagination
-    67. product-info
-    68. form.variations_form
-    69. product_meta
-    70. pd-imgs
-    71. about-gallery-img
-    72. content-us
-    73. head-office
-    74. history
-    75. works pages
-    76. find-a-dog.two
-    77. team-working
-    78. package.two
-    79. team-details
-    80. products-section
-    81. price-field
-    82. top-products
-    83. items-number
-    84. ul.specification
-    85. table
-    86. mobile-nav
-    87. coupon-area
-    88. cart_totals
-    89. checkout-meta
-    90. checkout-side
-    91. please-donate-today
-    92. box.login
-    93. Go To Top
-
-    
------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@400;500;600;700;800;900&display=swap');
 
 body {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Anybody', serif;
     font-size: 18px;
     font-weight: 600;
     color: #444;
@@ -145,13 +37,13 @@ a {
 }
 
 h1 {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Anybody', serif;
     font-size: 76px;
     font-weight: 600;
 }
 
 h2 {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Anybody', serif;
     font-size: 60px;
     font-weight: 600;
 }
@@ -576,7 +468,7 @@ li.menu-item-children > a:before {
     font-weight: 600;
     color: #000;
     text-transform: capitalize;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 li.menu-item-children > a:before {
@@ -1492,7 +1384,7 @@ section {
 
 .count-text span {
     font-size: 80px;
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Anybody', serif;
     font-weight: 600;
 }
 
@@ -3225,7 +3117,7 @@ img.faq-shaps {
     font-size: 20px;
     font-weight: bold;
     color: #000;
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Anybody', serif;
     padding-top: 10px;
     line-height: 28px;
 }
@@ -6795,6 +6687,7 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
 }
 
 .services-item {
+    max-width: 70%;
     display: flex; /* Active un conteneur flexbox */
     justify-content: space-between; /* Aligne les enfants aux extrémités (gauche et droite) */
     align-items: center; /* Centre verticalement le contenu si nécessaire */
