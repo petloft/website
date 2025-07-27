@@ -1554,7 +1554,7 @@ ul.social-icon i:hover {
 .team-working {
     position: relative;
     padding: 70px 54px;
-    border: 5px solid #f3f3f3;
+    border: 5px solid #D9723E;
     border-radius: 50%;
     margin-top: 90px;
 }
@@ -1571,19 +1571,6 @@ ul.social-icon i:hover {
     right: -9px;
     top: -38%;
 }
-
-.team-working:before {
-    position: absolute;
-    content: "";
-    width: 80px;
-    height: 54px;
-    border-radius: 50%;
-    left: 0;
-    top: -10%;
-    transform: rotate(341deg);
-    background-color: #f8f8f8;
-}
-
 
 .button {
     background-color: #fe5716;
@@ -6766,7 +6753,7 @@ span#progress-value i {
 footer.three .widget-title li a, .team-working h4, .white_content i, .food-categorie a, .pets-icon a, .recent-products-data a h4,
 .pagination li.prev, .pagination li.next, .pagination li.prev a, .pagination li.next a, .pagination li a, .hamburger-icon, .hamburger-icon svg,
 .content-us a, .video figure img, .tick a, .tick img, ul.category li, ul.category li span, .top-products a, .footer-provide a,
-ul.social-icon i, .team-working:hover, .team-working:before, .about-gallery-img figure:before, .about-gallery-img i,
+ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-gallery-img i,
 .phone a, .ordering a, .login a, .cart a svg, .cart, .products > a, ul.quick-links li a, ul.Meta li a, .blog-style-text h5,
 .blog-text-two h3, .blog-text-two a h2, .pets-icon, .recent-post a, ul.categories li a, ul.instagram-posts figure:before,
 .blog-style figure img, .package-text > i, .recent-products-data img, .recent-products-data a.button, .blog-style-two figure img,
@@ -6853,4 +6840,12 @@ display: flex;
     gap: 15px; /* Ensure spacing between the icons */
 }
 
+.team-member {
+    padding-top: 50px;
+}
 
+.come-say-hi {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}

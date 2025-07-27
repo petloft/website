@@ -1327,12 +1327,6 @@
         font-size: 14px;
     }
 
-    .team-working:before {
-        width: 66px;
-        height: 45px;
-        top: -8%;
-    }
-
     .team-working {
         margin-bottom: 30px;
     }
@@ -2408,10 +2402,6 @@
         margin-top: 90px;
     }
 
-    .team-working:before {
-        top: -1%;
-    }
-
     .team-working h4 {
         font-size: 30px;
         padding-bottom: 16px;
@@ -3246,10 +3236,6 @@
 }
 
 @media (max-width: 450px) {
-    .team-working:before {
-        top: -6%;
-    }
-
     .end .history-data:before {
         height: 266px;
         bottom: -49px;
