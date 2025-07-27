@@ -6794,13 +6794,38 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
     padding: 0; /* Ensure no internal spacing */
 }
 
-
 .services-item {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    list-style-position: inside;
-    display: list-item;
+    display: flex; /* Active un conteneur flexbox */
+    justify-content: space-between; /* Aligne les enfants aux extrémités (gauche et droite) */
+    align-items: center; /* Centre verticalement le contenu si nécessaire */
+}
+
+.service-title {
+    font-size: 20px; /* Ajustez selon votre design */
+    font-weight: 600; /* Accentuez le titre */
+    margin-bottom: 8px; /* Espacement entre le titre et la durée */
+}
+
+.service-duration {
+    display: block; /* Force la durée à s’afficher sur une nouvelle ligne */
+    font-size: 18px; /* Ajustez la taille de la durée */
+    font-weight: 400; /* Rendez-la moins prononcée que le titre */
+    color: #454545; /* Couleur plus douce pour différencier visuellement */
+    margin-top: 4px; /* Optionnel, ajoute un léger espace vertical */
+}
+.service-details {
+    font-weight: bold;
+}
+.service-name {
+    font-size: 16px; /* Ajuster la taille si nécessaire */
+    font-weight: 600;
+    color: #444; /* Couleur pour le texte */
+}
+
+.service-price {
+    font-size: 16px; /* Taille cohérente avec le texte */
+    font-weight: 700; /* Accentuer le prix */
+    color: #000; /* Optionnel, pour donner un style différent au prix */
 }
 
 .services-links {
@@ -6850,6 +6875,6 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
     white-space: normal; /* Autorise les retours à la ligne si le texte est trop long */
     text-decoration: none; /* Optionnel, pour supprimer l'underline des liens */
     color: inherit; /* Conserve la couleur héritée (ou appliquez une couleur spécifique) */
-    font-size: 14px ;
+    font-size: 14px;
 }
 
