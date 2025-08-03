@@ -6708,6 +6708,12 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
 
 .service-details {
     font-weight: bold;
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+.service-prices {
+    padding-top: 20px;
 }
 
 .service-name {
