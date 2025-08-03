@@ -750,9 +750,9 @@ header .line {
     margin: 0 12px;
 }
 
-
 .hero-section {
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 10px;
     display: flex;
     background-size: unset;
     padding-top: 220px;
