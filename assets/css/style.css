@@ -6697,6 +6697,9 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
     font-size: 20px; /* Ajustez selon votre design */
     font-weight: 600; /* Accentuez le titre */
     margin-bottom: 8px; /* Espacement entre le titre et la durée */
+    white-space: nowrap; /* Empêche les retours à la ligne */
+    overflow: visible; /* Permet au contenu de s'afficher hors du conteneur si nécessaire */
+    display: inline-block;
 }
 
 .service-duration {
@@ -6706,10 +6709,13 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
     color: #454545; /* Couleur plus douce pour différencier visuellement */
     margin-top: 4px; /* Optionnel, ajoute un léger espace vertical */
 }
+
 .service-details {
     font-weight: bold;
 }
+
 .service-name {
+    margin-right: 15px;
     font-size: 16px; /* Ajuster la taille si nécessaire */
     font-weight: 600;
     color: #444; /* Couleur pour le texte */
