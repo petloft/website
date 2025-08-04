@@ -1820,7 +1820,7 @@ i.quote {
 footer {
     position: relative;
     background-position: bottom;
-    padding-top: 140px;
+    padding-top: 100px;
     background-repeat: no-repeat;
 }
 
@@ -1862,7 +1862,6 @@ footer .phone i {
 .logo .phone i svg {
     fill: #000000;
 }
-
 
 .widget-title {
     position: relative;
@@ -6781,4 +6780,13 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
 
 .light-bg {
     background-color: #f4f1ea;
+}
+
+.quick-links {
+    padding-left: 100px;
+}
+
+.footer-left {
+    padding-top: 0;
+    padding-bottom: 50px;
 }
