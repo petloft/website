@@ -6771,14 +6771,14 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
     font-size: 14px;
 }
 
-.top-button {
-    background-color: #D9723E;
-    display: inline-block;
-    padding: 1px 40px;
-    border-radius: 65px;
-    color: white;
-    font-weight: bold;
-    width: auto;
-    position: relative;
-    z-index: 1;
-    text-transform: capitalize;}
+.insta-link {
+    display: flex;
+}
+
+.insta-link:hover {
+    color: #684936;
+}
+
+.light-bg {
+    background-color: #f4f1ea;
+}
