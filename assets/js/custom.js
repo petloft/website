@@ -142,32 +142,28 @@ jQuery(document).ready(function($){
         })
      }
 
-     //* 08. Loder  *//
-    $(function () {
-        $('body').addClass('loaded');
-    });
 
      /* 09. mobile-nav */
-  jQuery('.mobile-nav .menu-item-has-children').on('click', function($) {
+  jQuery('.mobile-nav .menu-item-has-children').on('click', function() {
 
           jQuery(this).toggleClass('active');
 
         }); 
 
-        jQuery('#nav-icon4').click(function($){
+        jQuery('#nav-icon4').click(function(){
 
             jQuery('#mobile-nav').toggleClass('open');
 
         });
 
-        jQuery('#res-cross').click(function($){
+        jQuery('#res-cross').click(function(){
 
            jQuery('#mobile-nav').removeClass('open');
 
         });
 
 
-        jQuery('.bar-menu').click(function($){
+        jQuery('.bar-menu').click(function(){
 
             jQuery('#mobile-nav').toggleClass('open');
             jQuery('#mobile-nav').toggleClass('hamburger-menu');
@@ -175,11 +171,6 @@ jQuery(document).ready(function($){
 
         });
 
-        jQuery('#res-cross').click(function($){
-
-           jQuery('#mobile-nav').removeClass('open');
-
-        });
      
   }) ;
 
@@ -190,8 +181,8 @@ if(jQuery("#days").length){
     (function () {
         const second = 1000,
         minute = second * 60,
-        hour = minute * 160,
-        day = hour * 184;
+        hour = minute * 60,
+        day = hour * 24;
 
       let today = new Date(),
           dd = String(today.getDate()).padStart(2, "0"),
@@ -226,7 +217,7 @@ if(jQuery("#days").length){
               clearInterval(x);
             }
             //seconds
-          }, 0)
+          }, 1000)
       }());
 }
 //end
