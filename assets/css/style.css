@@ -3839,7 +3839,7 @@ a.heart-wishlist:hover {
 }
 
 .footer-provide:hover img {
-    -webkit-animation: top-bottom 1s infinitet;
+    -webkit-animation: top-bottom 1s infinite;
     animation: top-bottom 1s infinite;
 }
 
@@ -6784,4 +6784,51 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
 
 .quick-links {
     padding-left: 100px;
+}
+
+/* Accessibility & performance improvements (2025-08-08) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: .5rem .75rem;
+  background: #000;
+  color: #fff;
+  z-index: 1000000;
+  border-radius: 4px;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Improve keyboard focus visibility */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .preloader .container { animation: none !important; }
+  .dot, .dot-1, .dot-2, .dot-3 { animation: none !important; }
 }

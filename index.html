@@ -4,7 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Loft - Dubaï</title>
+    <meta name="description" content="Pet Loft is a pet grooming salon in Dubai offering gentle, professional grooming tailored to your pet’s comfort. Book your appointment today.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#e3d0bc">
     <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pet Loft — Pet Grooming Dubai">
+    <meta property="og:description" content="Gentle, professional pet grooming in Dubai. Because every pet is one of a kind.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/petloft/welcome/pic5.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pet Loft — Pet Grooming Dubai">
+    <meta name="twitter:description" content="Gentle, professional pet grooming in Dubai. Because every pet is one of a kind.">
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" href="assets/img/petloft/welcome/pic5.jpg">
     <!-- CSS only -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -21,10 +37,32 @@
     <!-- color -->
     <link rel="stylesheet" href="assets/css/color.css">
     <!-- jQuery -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js" defer></script>
+    <script src="assets/js/preloader.js" defer></script>
+    <!-- JSON-LD Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Pet Loft",
+      "email": "admin@pet-loft.com",
+      "telephone": "+971508816789",
+      "sameAs": [
+        "https://www.facebook.com/share/1JuFwSepGp/?mibextid=wwXIfr",
+        "https://www.instagram.com/petloft.grooming?igsh=ZGRubTNjMDA3MHBi"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Diamond Business Center C1 — Shop G8",
+        "addressLocality": "Arjan",
+        "addressRegion": "Dubai",
+        "addressCountry": "AE"
+      }
+    }
+    </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <!-- loader -->
 <div class="preloader">
     <div class="container">
@@ -65,7 +103,7 @@
         <div class="bottom-bar">
             <div class="logo-and-menu">
                 <a href="#"><img class="logo" src="assets/img/logos/logo2.jpg" alt="logo"></a>
-                <nav class="navbar">
+                <nav class="navbar" aria-label="Primary navigation">
                     <ul class="navbar-links">
                         <li class="navbar-dropdown">
                             <a href="#about">About us</a>
@@ -119,6 +157,7 @@
         </ul>
     </div>
 </header>
+<main id="main" role="main">
 <section class="hero-section"
          style="background-color: #e3d0bc; padding-bottom: 60px; background-image:url(assets/img/background-petloft.png)">
     <div class="container">
@@ -136,8 +175,8 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="hero-img">
-                            <img src="./assets/img/petloft/welcome/pic5.jpg" alt="img">
-                            <img src="assets/img/hero-shaps-petloft.png" alt="hero-shaps" class="img-1">
+                            <img src="./assets/img/petloft/welcome/pic5.jpg" alt="Pet Loft grooming studio" decoding="async" fetchpriority="high" loading="eager">
+                            <img src="assets/img/hero-shaps-petloft.png" alt="" aria-hidden="true" class="img-1" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -155,8 +194,8 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="hero-img">
-                            <img src="./assets/img/petloft/welcome/pic3.jpg" alt="img">
-                            <img src="assets/img/hero-shaps-petloft.png" alt="hero-shaps" class="img-1">
+                            <img src="./assets/img/petloft/welcome/pic3.jpg" alt="Pet Loft grooming in action" decoding="async" loading="lazy">
+                            <img src="assets/img/hero-shaps-petloft.png" alt="" aria-hidden="true" class="img-1" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -174,7 +213,7 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="hero-img">
-                            <img src="./assets/img/petloft/welcome/pic12.jpg" alt="img">
+                            <img src="./assets/img/petloft/welcome/pic12.jpg" alt="Happy pet at Pet Loft" decoding="async" loading="lazy">
                             <img src="assets/img/hero-shaps-petloft.png" alt="hero-shaps" class="img-1">
                         </div>
                     </div>
@@ -182,9 +221,9 @@
             </div>
         </div>
     </div>
-    <img src="assets/img/hero-shaps-1-petloft.png" alt="hero-shaps" class="img-2">
-    <img src="assets/img/dabal-foot-1-petloft.png" alt="hero-shaps" class="img-3">
-    <img src="assets/img/hero-shaps-1-petloft.png" alt="hero-shaps" class="img-4">
+    <img src="assets/img/hero-shaps-1-petloft.png" alt="" aria-hidden="true" class="img-2" loading="lazy">
+    <img src="assets/img/dabal-foot-1-petloft.png" alt="" aria-hidden="true" class="img-3" loading="lazy">
+    <img src="assets/img/hero-shaps-1-petloft.png" alt="" aria-hidden="true" class="img-4" loading="lazy">
 </section>
 <section id="about" class="gap no-bottom light-bg" style="padding-bottom: 60px;">
     <div class="container">
@@ -546,12 +585,13 @@
                 Us</a>
         </div>
         <!-- LightWidget WIDGET -->
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js" defer></script>
         <iframe src="https://cdn.lightwidget.com/widgets/fc85da1a324954c1b1a3aa4846c29018.html" scrolling="no"
-                allowtransparency="true" class="lightwidget-widget"
+                allowtransparency="true" class="lightwidget-widget" loading="lazy" title="Instagram feed"
                 style="width:100%;border:0;overflow:hidden;"></iframe>
     </div>
 </div>
+</main>
 <footer id="contact" style="background-color: #e3d0bc; background-image:url(assets/img/background-petloft-footer.png)">
     <div class="container">
         <div class="row">
@@ -632,10 +672,11 @@
 </div>
 <!-- progress end -->
 <!-- Bootstrap Js -->
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/bootstrap.min.js" defer></script>
+<script src="assets/js/owl.carousel.min.js" defer></script>
+<script src="assets/js/slick.min.js" defer></script>
 <!-- fancybox -->
-<script src="assets/js/jquery.fancybox.min.js"></script>
-<script src="assets/js/custom.js"></script>
+<script src="assets/js/jquery.fancybox.min.js" defer></script>
+<script src="assets/js/custom.js" defer></script>
 </body>
+</html>
