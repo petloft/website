@@ -4135,11 +4135,10 @@ ul.pd-imgs li a img {
     justify-content: center;
     width: 120px;
     height: 120px;
-    margin: auto;
     background-color: #940c69;
     border-radius: 50%;
     padding: 34px;
-    margin-bottom: 22px;
+    margin: auto auto 22px;
 }
 
 .content-us > svg {
