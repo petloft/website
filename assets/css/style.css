@@ -678,6 +678,7 @@ a.search-btn svg {
 .menu-end {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 header .line {
@@ -5271,11 +5272,13 @@ li.menu-item-has-children.active {
 #res-cross::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 140%;
   left: 50%;
   width: 22px;
   height: 2px;
-  background: #000;
+  background: #42261e;
+    font-weight: bold;
+    font-size: 16px;
   transform-origin: center;
 }
 #res-cross::before { transform: translate(-50%, -50%) rotate(45deg); }
