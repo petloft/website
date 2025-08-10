@@ -169,25 +169,20 @@ jQuery(document).ready(function ($) {
 
     jQuery('#mobile-nav').on('click', 'a[href^="#"]', function (e) {
         const targetId = this.getAttribute('href'); // e.g., "#services"
-        // Ignore empty "#"
         if (!targetId || targetId === '#') return;
 
         const $target = jQuery(targetId);
         if ($target.length) {
             e.preventDefault();
 
-            // Close the mobile nav and update ARIA state
             jQuery('#mobile-nav').removeClass('open');
             jQuery('.bar-menu').attr('aria-expanded', 'false');
 
-            // Optional: account for a fixed header height
-            const header = document.querySelector('header');
-            const offset = 0; // set to header.offsetHeight if your header is fixed
+            const offset = 0;
 
             const y = $target.offset().top - offset;
             window.scrollTo({top: y, behavior: 'smooth'});
 
-            // Update the hash without causing an instant jump
             history.pushState(null, '', targetId);
         }
     });
