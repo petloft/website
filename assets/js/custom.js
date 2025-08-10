@@ -28,197 +28,217 @@
 
 -----------------------------------------------------------------------------------*/
 
-jQuery(document).ready(function($){
-    if ( $.isFunction($.fn.owlCarousel) ) {
-    /* 01. slider-categorie */ 
-    $('.slider-categorie').owlCarousel({
-        loop:true,
-        dot:true,
-        nav:true,
-        autoplay:true,
-        navText: ["<i class='fa-solid fa-arrow-left'></i>","<i class='fa-solid fa-arrow-right'></i>"],
-        responsive:{
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            993:{
-                items:3
-            },
-            1360:{
-                items:4
+jQuery(document).ready(function ($) {
+    if ($.isFunction($.fn.owlCarousel)) {
+        /* 01. slider-categorie */
+        $('.slider-categorie').owlCarousel({
+            loop: true,
+            dot: true,
+            nav: true,
+            autoplay: true,
+            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                993: {
+                    items: 3
+                },
+                1360: {
+                    items: 4
+                }
             }
-          }
         })
-    /* 02. hero-one-slider */
-    $('.hero-one-slider').owlCarousel({
-        loop:true,
-        dot:true,
-        nav:true,
-        items:1,
-        autoplay:true,
-    })
-    /* 03. quotation-slider */
-    $('.quotation-slider').owlCarousel({
-        loop:true,
-        dot:false,
-        nav:true,
-        items:1,
-        autoplay:true,
-        touchDrag: false,
-        mouseDrag: false,
-        animateOut: 'fadeOut',
-        navText: ["<i class='fa-solid fa-arrow-left'></i>","<i class='fa-solid fa-arrow-right'></i>"],
-    })
-    /* 04. hero-two-slider */
-    $('.hero-two-slider').owlCarousel({
-        loop:true,
-        dot:true,
-        nav:true,
-        items:1,
-        autoplay:true,
-        navText: ["<i class='fa-solid fa-arrow-left'></i>","<i class='fa-solid fa-arrow-right'></i>"],
-        animateOut: 'fadeOut'
+        /* 02. hero-one-slider */
+        $('.hero-one-slider').owlCarousel({
+            loop: true,
+            dot: true,
+            nav: true,
+            items: 1,
+            autoplay: true,
         })
-    /* 05. client-slider */
-    $('.client-slider').owlCarousel({
-        loop:true,
-        dot:true,
-        nav:true,
-        autoplay:true,
-        navText: ["<i class='fa-solid fa-arrow-left'></i>","<i class='fa-solid fa-arrow-right'></i>"],
-        responsive:{
-            0:{
-                items:1
-            },
-            768:{
-                items:1
-            },
-            1200:{
-                items:2
+        /* 03. quotation-slider */
+        $('.quotation-slider').owlCarousel({
+            loop: true,
+            dot: false,
+            nav: true,
+            items: 1,
+            autoplay: true,
+            touchDrag: false,
+            mouseDrag: false,
+            animateOut: 'fadeOut',
+            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
+        })
+        /* 04. hero-two-slider */
+        $('.hero-two-slider').owlCarousel({
+            loop: true,
+            dot: true,
+            nav: true,
+            items: 1,
+            autoplay: true,
+            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
+            animateOut: 'fadeOut'
+        })
+        /* 05. client-slider */
+        $('.client-slider').owlCarousel({
+            loop: true,
+            dot: true,
+            nav: true,
+            autoplay: true,
+            navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                1200: {
+                    items: 2
+                }
             }
-          }
         })
-    /* 06. logodata */
-    $('.logodata').owlCarousel({
-        loop:true,
-        dot:false,
-        nav:false,
-        autoplay:true,
-        autoplayTimeout:3000,
-        responsive:{
-        0:{
-            items:2
-        },
-        800:{
-            items:3
-        },
-        1000:{
-            items:4
-        },
-        1200:{
-            items:5
+        /* 06. logodata */
+        $('.logodata').owlCarousel({
+            loop: true,
+            dot: false,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                800: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                },
+                1200: {
+                    items: 5
+                }
+            }
+        })
+        /* 07. pets-slider */
+        $('.pets-slider').owlCarousel({
+            loop: true,
+            dot: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                993: {
+                    items: 2
+                }
+            }
+        })
+    }
+
+    /* 09. mobile-nav */
+    jQuery('.mobile-nav .menu-item-has-children').on('click', function () {
+        jQuery(this).toggleClass('active');
+    });
+
+    jQuery('#nav-icon4').click(function () {
+
+        jQuery('#mobile-nav').toggleClass('open');
+
+    });
+
+    jQuery('.bar-menu').on('click', function () {
+        const $nav = jQuery('#mobile-nav');
+        const isOpen = $nav.toggleClass('open').hasClass('open');
+
+        // keep ARIA state in sync for accessibility
+        jQuery(this).attr('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    jQuery('#res-cross').on('click', function (e) {
+        e.preventDefault(); // safe even if it becomes a <button>
+        jQuery('#mobile-nav').removeClass('open');
+        jQuery('.bar-menu').attr('aria-expanded', 'false');
+    });
+
+    jQuery('#mobile-nav').on('click', 'a[href^="#"]', function (e) {
+        const targetId = this.getAttribute('href'); // e.g., "#services"
+        // Ignore empty "#"
+        if (!targetId || targetId === '#') return;
+
+        const $target = jQuery(targetId);
+        if ($target.length) {
+            e.preventDefault();
+
+            // Close the mobile nav and update ARIA state
+            jQuery('#mobile-nav').removeClass('open');
+            jQuery('.bar-menu').attr('aria-expanded', 'false');
+
+            // Optional: account for a fixed header height
+            const header = document.querySelector('header');
+            const offset = 0; // set to header.offsetHeight if your header is fixed
+
+            const y = $target.offset().top - offset;
+            window.scrollTo({top: y, behavior: 'smooth'});
+
+            // Update the hash without causing an instant jump
+            history.pushState(null, '', targetId);
         }
-      }
-    })
-    /* 07. pets-slider */
-    $('.pets-slider').owlCarousel({
-        loop:true,
-        dot:true,
-        autoplay:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            993:{
-                items:2
-            }
-          }
-        })
-     }
+    });
 
-
-     /* 09. mobile-nav */
-  jQuery('.mobile-nav .menu-item-has-children').on('click', function() {
-
-          jQuery(this).toggleClass('active');
-
-        }); 
-
-        jQuery('#nav-icon4').click(function(){
-
-            jQuery('#mobile-nav').toggleClass('open');
-
-        });
-
-        jQuery('#res-cross').click(function(){
-
-           jQuery('#mobile-nav').removeClass('open');
-
-        });
-
-
-        jQuery('.bar-menu').click(function(){
-
-            jQuery('#mobile-nav').toggleClass('open');
-            jQuery('#mobile-nav').toggleClass('hamburger-menu');
-            jQuery('#mobile-nav').show();
-
-        });
-
-     
-  }) ;
+});
 
 /* 10. days */
 
-if(jQuery("#days").length){
+if (jQuery("#days").length) {
 
     (function () {
         const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
 
-      let today = new Date(),
-          dd = String(today.getDate()).padStart(2, "0"),
-          mm = String(today.getMonth() + 1).padStart(2, "0"),
-          yyyy = today.getFullYear(),
-          nextYear = yyyy + 1,
-          dayMonth = "12/30/",
-          birthday = dayMonth + yyyy;
-      
-      today = mm + "/" + dd + "/" + yyyy;
-      if (today > birthday) {
-        birthday = dayMonth + nextYear;
-      }
-      
-      
-      const countDown = new Date(birthday).getTime(),
-          x = setInterval(function() {    
+        let today = new Date(),
+            dd = String(today.getDate()).padStart(2, "0"),
+            mm = String(today.getMonth() + 1).padStart(2, "0"),
+            yyyy = today.getFullYear(),
+            nextYear = yyyy + 1,
+            dayMonth = "12/30/",
+            birthday = dayMonth + yyyy;
 
-            const now = new Date().getTime(),
-                  distance = countDown - now;
+        today = mm + "/" + dd + "/" + yyyy;
+        if (today > birthday) {
+            birthday = dayMonth + nextYear;
+        }
 
-            document.getElementById("days").innerText = Math.floor(distance / (day)),
-              document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-              document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-              document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-            //do something later when date is reached
-            if (distance < 0) {
-              document.getElementById("headline").innerText = "It's my birthday!";
-              document.getElementById("countdown").style.display = "none";
-              document.getElementById("content").style.display = "block";
-              clearInterval(x);
-            }
-            //seconds
-          }, 1000)
-      }());
+        const countDown = new Date(birthday).getTime(),
+            x = setInterval(function () {
+
+                const now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById("days").innerText = Math.floor(distance / (day)),
+                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                //do something later when date is reached
+                if (distance < 0) {
+                    document.getElementById("headline").innerText = "It's my birthday!";
+                    document.getElementById("countdown").style.display = "none";
+                    document.getElementById("content").style.display = "block";
+                    clearInterval(x);
+                }
+                //seconds
+            }, 1000)
+    }());
 }
 //end
 /* 11. count */
@@ -226,19 +246,20 @@ let count = document.querySelectorAll(".count");
 let arr = Array.from(count);
 
 arr.map(function (item) {
-  let startnumber = 0;
+    let startnumber = 0;
 
-  function counterup() {
-    startnumber++;
-    item.innerHTML = startnumber;
+    function counterup() {
+        startnumber++;
+        item.innerHTML = startnumber;
 
-    if (startnumber == item.dataset.number) {
-      clearInterval(stop);
+        if (startnumber == item.dataset.number) {
+            clearInterval(stop);
+        }
     }
-  }
-  let stop = setInterval(function () {
-    counterup();
-  }, 10);
+
+    let stop = setInterval(function () {
+        counterup();
+    }, 10);
 });
 
 // count end
@@ -246,32 +267,32 @@ arr.map(function (item) {
 
 /* 12. Cart Popup Start */
 
-    jQuery('.pr-cart').on('click', function() {
+jQuery('.pr-cart').on('click', function () {
 
-      jQuery('.cart-popup').toggleClass('show-cart');
+    jQuery('.cart-popup').toggleClass('show-cart');
 
-    });
+});
 
 // Cart Popup End
 
 
 /* 13. Header Search */
-    if($('.search-box-outer').length) {
-        $('.search-box-outer').on('click', function() {
-            $('body').addClass('search-active');
-        });
-        $('.close-search').on('click', function() {
-            $('body').removeClass('search-active');
-        });
-    }
+if ($('.search-box-outer').length) {
+    $('.search-box-outer').on('click', function () {
+        $('body').addClass('search-active');
+    });
+    $('.close-search').on('click', function () {
+        $('body').removeClass('search-active');
+    });
+}
 
 
 /* 14. accordion-item */
 
-$('.accordion-item .heading').on('click', function(e) {
+$('.accordion-item .heading').on('click', function (e) {
     e.preventDefault();
 
-    if($(this).closest('.accordion-item').hasClass('active')) {
+    if ($(this).closest('.accordion-item').hasClass('active')) {
         $('.accordion-item').removeClass('active');
     } else {
         $('.accordion-item').removeClass('active');
@@ -287,101 +308,101 @@ $('.accordion-item .heading').on('click', function(e) {
 
 
 /* 15. pd-gallery */
-    $('.li-pd-imgs').on('click', function() {
+$('.li-pd-imgs').on('click', function () {
 
-      var img_src = "";
+    var img_src = "";
 
-      $('.li-pd-imgs.nav-active').removeClass('nav-active');
+    $('.li-pd-imgs.nav-active').removeClass('nav-active');
 
-      $(this).addClass('nav-active');
+    $(this).addClass('nav-active');
 
-      img_src = $(this).find('img').attr('src');
+    img_src = $(this).find('img').attr('src');
 
-      $('.pd-main-img').children('img').attr('src', img_src);
+    $('.pd-main-img').children('img').attr('src', img_src);
 
+});
+
+
+/* 16. overlay */
+var boxWidth = $("#lightbox").width();
+$(".white_content").animate({
+    opacity: 0,
+    width: 0,
+    right: -10000
+});
+$("#close").on('click', function () {
+    $(".white_content").animate({
+        opacity: 0,
+        width: 0,
+        right: -1000
+    });
+});
+$("#show").on('click', function () {
+    $(".white_content").animate({
+        opacity: 1,
+        right: 0
     });
 
+});
 
-    /* 16. overlay */
-        var boxWidth = $("#lightbox").width();
-                $(".white_content").animate({
-                    opacity: 0,
-                    width:0,
-                    right : -10000
-            });
-            $("#close").on('click',function(){ 
-            $(".white_content").animate({
-                opacity: 0,
-                width:0,
-                right : -1000
-            });
-            });
-            $("#show").on('click',function(){ 
-            $(".white_content").animate({
-                opacity: 1,
-                right :0
-            });
-
-        });
-
-    /* 17. scrollTop */
+/* 17. scrollTop */
 
 function inVisible(element) {
-  var WindowTop = $(window).scrollTop();
-  var WindowBottom = WindowTop + $(window).height();
-  var ElementTop = element.offset().top;
-  var ElementBottom = ElementTop + element.height();
-  if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
-    animate(element);
+    var WindowTop = $(window).scrollTop();
+    var WindowBottom = WindowTop + $(window).height();
+    var ElementTop = element.offset().top;
+    var ElementBottom = ElementTop + element.height();
+    if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
+        animate(element);
 }
 
 function animate(element) {
-  if (!element.hasClass('ms-animated')) {
-    var maxval = element.data('max');
-    var html = element.html();
-    element.addClass("ms-animated");
-    $({
-      countNum: element.html()
-    }).animate({
-      countNum: maxval
-    }, {
-      duration: 5000,
-      easing: 'linear',
-      step: function() {
-        element.html(Math.floor(this.countNum) + html);
-      },
-      complete: function() {
-        element.html(this.countNum + html);
-      }
-    });
-  }
+    if (!element.hasClass('ms-animated')) {
+        var maxval = element.data('max');
+        var html = element.html();
+        element.addClass("ms-animated");
+        $({
+            countNum: element.html()
+        }).animate({
+            countNum: maxval
+        }, {
+            duration: 5000,
+            easing: 'linear',
+            step: function () {
+                element.html(Math.floor(this.countNum) + html);
+            },
+            complete: function () {
+                element.html(this.countNum + html);
+            }
+        });
+    }
 
 }
 
-$(function() {
-  $(window).scroll(function() {
-    $("h2[data-max]").each(function() {
-      inVisible($(this));
-    });
-  })
+$(function () {
+    $(window).scroll(function () {
+        $("h2[data-max]").each(function () {
+            inVisible($(this));
+        });
+    })
 });
- let calcScrollValue = () => {
-  let scrollProgress = document.getElementById("progress");
-  let progressValue = document.getElementById("progress-value");
-  let pos = document.documentElement.scrollTop;
-  let calcHeight =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight);
-  if (pos > 100) {
-    scrollProgress.style.display = "grid";
-  } else {
-    scrollProgress.style.display = "none";
-  }
-  scrollProgress.addEventListener("click", () => {
-    document.documentElement.scrollTop = 0;
-  });
-  scrollProgress.style.background = `conic-gradient(#B27C5C ${scrollValue}%, #fff ${scrollValue}%)`;
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    if (pos > 100) {
+        scrollProgress.style.display = "grid";
+    } else {
+        scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+    });
+    scrollProgress.style.background = `conic-gradient(#B27C5C ${scrollValue}%, #fff ${scrollValue}%)`;
 };
 
 window.onscroll = calcScrollValue;

@@ -1,7 +1,8 @@
 @media (max-width: 768px){
-    #mobile-nav {
-        display: block !important; /* affiché */
+    #mobile-nav:not(.open) {
+        display: none !important;
     }
+
 
     nav.navbar {
         display: none; /* cacher le menu desktop */

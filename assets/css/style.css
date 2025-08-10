@@ -5222,19 +5222,64 @@ li.menu-item-has-children.active {
 }
 
 .bar-menu {
-    display: none;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    z-index: 10000;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
+  display: inline-block;
+  width: 28px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0;
+
 }
+
+
+.bar-menu::before,
+.bar-menu::after,
+.bar-menu > span {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #673b2f;
+    border-radius: 2px;
+}
+.bar-menu::before { top: 0; }
+.bar-menu > span   { top: 9px; }
+.bar-menu::after  { bottom: 0; }
+
 
 .bar-menu i {
     color: black;
 }
+#res-cross {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1001; /* above nav content */
+}
+
+/* Draw the "X" using CSS lines */
+#res-cross::before,
+#res-cross::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 2px;
+  background: #000;
+  transform-origin: center;
+}
+#res-cross::before { transform: translate(-50%, -50%) rotate(45deg); }
+#res-cross::after  { transform: translate(-50%, -50%) rotate(-45deg); }
 
 .mobile-nav .social-media li a {
     margin-right: 0;
@@ -5943,4 +5988,12 @@ textarea:focus-visible {
     height: 200px; /* Adjust this height to prevent scrollbars */
     border: none; /* Remove default iframe border */
     overflow: hidden; /* Prevent iframe overflow */
+}
+
+#mobile-nav {
+    display: none;
+}
+
+#mobile-nav.open {
+    display: block;
 }
