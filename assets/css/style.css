@@ -965,7 +965,7 @@ img.haddi {
 .hero-one-slider .owl-dots {
     position: absolute;
     width: fit-content;
-    bottom: 4%;
+    bottom: -7%;
 }
 
 .pets-slider button.owl-dot.active,
@@ -1073,7 +1073,7 @@ img.haddi {
 }
 
 .slider-categorie .owl-dots {
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 ul.star {
