@@ -965,7 +965,7 @@ img.haddi {
 .hero-one-slider .owl-dots {
     position: absolute;
     width: fit-content;
-    bottom: -7%;
+    bottom: -6%;
 }
 
 .pets-slider button.owl-dot.active,
@@ -5999,4 +5999,9 @@ textarea:focus-visible {
 
 #mobile-nav.open {
     display: block;
+}
+
+.large-brand-icon {
+    font-size: 35px !important;
+    margin-right: 20px;
 }
