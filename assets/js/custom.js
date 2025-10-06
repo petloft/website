@@ -1,36 +1,5 @@
-/*-----------------------------------------------------------------------------------
-
-    Template Name: patte
-
-    Note: This is Custom Js file
-
------------------------------------------------------------------------------------
-
-    [Table of contents]
-    
-    01. slider-categorie
-    02. hero-one-slider
-    03. quotation-slider
-    04. hero-two-slider
-    05. client-slider
-    06. logodata
-    07. pets-slider
-    08. Loder
-    09. mobile-nav
-    10. days
-    11. count
-    12. Cart Popup Start
-    13. Header Search
-    14. accordion-item
-    15. pd-gallery
-    16. overlay
-    17. scrollTop
-
------------------------------------------------------------------------------------*/
-
 jQuery(document).ready(function ($) {
     if ($.isFunction($.fn.owlCarousel)) {
-        /* 01. slider-categorie */
         $('.slider-categorie').owlCarousel({
             loop: true,
             dot: true,
@@ -52,7 +21,6 @@ jQuery(document).ready(function ($) {
                 }
             }
         })
-        /* 02. hero-one-slider */
         $('.hero-one-slider').owlCarousel({
             loop: true,
             dot: true,
@@ -60,7 +28,6 @@ jQuery(document).ready(function ($) {
             items: 1,
             autoplay: true,
         })
-        /* 03. quotation-slider */
         $('.quotation-slider').owlCarousel({
             loop: true,
             dot: false,
@@ -72,7 +39,6 @@ jQuery(document).ready(function ($) {
             animateOut: 'fadeOut',
             navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
         })
-        /* 04. hero-two-slider */
         $('.hero-two-slider').owlCarousel({
             loop: true,
             dot: true,
@@ -82,7 +48,6 @@ jQuery(document).ready(function ($) {
             navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
             animateOut: 'fadeOut'
         })
-        /* 05. client-slider */
         $('.client-slider').owlCarousel({
             loop: true,
             dot: true,
@@ -101,7 +66,6 @@ jQuery(document).ready(function ($) {
                 }
             }
         })
-        /* 06. logodata */
         $('.logodata').owlCarousel({
             loop: true,
             dot: false,
@@ -123,7 +87,6 @@ jQuery(document).ready(function ($) {
                 }
             }
         })
-        /* 07. pets-slider */
         $('.pets-slider').owlCarousel({
             loop: true,
             dot: true,
@@ -142,7 +105,6 @@ jQuery(document).ready(function ($) {
         })
     }
 
-    /* 09. mobile-nav */
     jQuery('.mobile-nav .menu-item-has-children').on('click', function () {
         jQuery(this).toggleClass('active');
     });
@@ -189,7 +151,6 @@ jQuery(document).ready(function ($) {
 
 });
 
-/* 10. days */
 
 if (jQuery("#days").length) {
 
@@ -236,7 +197,6 @@ if (jQuery("#days").length) {
     }());
 }
 //end
-/* 11. count */
 let count = document.querySelectorAll(".count");
 let arr = Array.from(count);
 
@@ -260,7 +220,6 @@ arr.map(function (item) {
 // count end
 
 
-/* 12. Cart Popup Start */
 
 jQuery('.pr-cart').on('click', function () {
 
@@ -271,7 +230,6 @@ jQuery('.pr-cart').on('click', function () {
 // Cart Popup End
 
 
-/* 13. Header Search */
 if ($('.search-box-outer').length) {
     $('.search-box-outer').on('click', function () {
         $('body').addClass('search-active');
@@ -282,7 +240,6 @@ if ($('.search-box-outer').length) {
 }
 
 
-/* 14. accordion-item */
 
 $('.accordion-item .heading').on('click', function (e) {
     e.preventDefault();
@@ -294,7 +251,7 @@ $('.accordion-item .heading').on('click', function (e) {
 
         $(this).closest('.accordion-item').addClass('active');
     }
-    var $content = $(this).next();
+    const $content = $(this).next();
     $content.slideToggle(100);
     $('.accordion-item .content').not($content).slideUp('fast');
 });
@@ -302,10 +259,9 @@ $('.accordion-item .heading').on('click', function (e) {
 // end
 
 
-/* 15. pd-gallery */
 $('.li-pd-imgs').on('click', function () {
 
-    var img_src = "";
+    let img_src = "";
 
     $('.li-pd-imgs.nav-active').removeClass('nav-active');
 
@@ -318,8 +274,7 @@ $('.li-pd-imgs').on('click', function () {
 });
 
 
-/* 16. overlay */
-var boxWidth = $("#lightbox").width();
+const boxWidth = $("#lightbox").width();
 $(".white_content").animate({
     opacity: 0,
     width: 0,
@@ -340,21 +295,19 @@ $("#show").on('click', function () {
 
 });
 
-/* 17. scrollTop */
-
 function inVisible(element) {
-    var WindowTop = $(window).scrollTop();
-    var WindowBottom = WindowTop + $(window).height();
-    var ElementTop = element.offset().top;
-    var ElementBottom = ElementTop + element.height();
+    const WindowTop = $(window).scrollTop();
+    const WindowBottom = WindowTop + $(window).height();
+    const ElementTop = element.offset().top;
+    const ElementBottom = ElementTop + element.height();
     if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
         animate(element);
 }
 
 function animate(element) {
     if (!element.hasClass('ms-animated')) {
-        var maxval = element.data('max');
-        var html = element.html();
+        const maxval = element.data('max');
+        const html = element.html();
         element.addClass("ms-animated");
         $({
             countNum: element.html()
@@ -383,7 +336,6 @@ $(function () {
 });
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
-    let progressValue = document.getElementById("progress-value");
     let pos = document.documentElement.scrollTop;
     let calcHeight =
         document.documentElement.scrollHeight -

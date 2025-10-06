@@ -1334,7 +1334,7 @@ ul.social-icon i:hover {
     position: absolute;
     right: 0;
     top: -35%;
-    width: auto; /* Assure les dimensions normales */
+    width: auto;
     height: auto;
     display: block !important;
 
@@ -5264,10 +5264,9 @@ li.menu-item-has-children.active {
   padding: 0;
   background: transparent;
   cursor: pointer;
-  z-index: 1001; /* above nav content */
+  z-index: 1001;
 }
 
-/* Draw the "X" using CSS lines */
 #res-cross::before,
 #res-cross::after {
   content: "";
@@ -5918,7 +5917,6 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
     padding-left: 100px;
 }
 
-/* Accessibility & performance improvements (2025-08-08) */
 .skip-link {
     position: absolute;
     left: -9999px;
@@ -5943,7 +5941,6 @@ ul.social-icon i, .team-working:hover, .about-gallery-img figure:before, .about-
     outline-offset: 2px;
 }
 
-/* Improve keyboard focus visibility */
 a:focus-visible,
 button:focus-visible,
 [role="button"]:focus-visible,
@@ -5954,7 +5951,6 @@ textarea:focus-visible {
     outline-offset: 2px;
 }
 
-/* Respect reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -5979,18 +5975,18 @@ textarea:focus-visible {
 }
 
 .iframe-container {
-    width: 100%; /* Adjust width */
-    height: auto; /* Adjust height */
-    overflow: hidden; /* Ensure no scroll on parent */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
     display: flex;
     justify-content: center;
 }
 
 .iframe-container iframe {
-    width: 100%; /* Provide responsive width */
-    height: 200px; /* Adjust this height to prevent scrollbars */
-    border: none; /* Remove default iframe border */
-    overflow: hidden; /* Prevent iframe overflow */
+    width: 100%;
+    height: 200px;
+    border: none;
+    overflow: hidden;
 }
 
 #mobile-nav {
