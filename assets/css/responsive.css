@@ -5,7 +5,7 @@
 
 
     nav.navbar {
-        display: none; /* cacher le menu desktop */
+        display: none;
     }
 
     .hero-img img {
@@ -14,8 +14,8 @@
     }
 
     .hero-text {
-        padding: 20px; /* Ajustement pour les tailles plus petites */
-        text-align: center; /* Centrer le texte sur des écrans réduits */
+        padding: 20px;
+        text-align: center;
     }
 }*{
     margin: 0;

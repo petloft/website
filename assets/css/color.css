@@ -1,4 +1,3 @@
-/* Color */
 footer.two .phone a:hover,
 .white_content i:hover,.food-categorie a:hover,.pets-icon a:hover,.recent-products-data a h4:hover,
 .top-products span,.top-products a:hover,.pagination li a:hover,ul.reviews span,footer.three .widget-title li a:hover,
@@ -15,7 +14,6 @@ footer.two .phone a:hover,
     color: #B27C5C;
 
 }
-/* Background Color */
 .preloader,
 input[type='radio']:checked:after,.footer-provide:hover,.tick:before,
 .mobile-nav > ul > li.menu-item-has-children.active > ul.sub-menu li:before,
