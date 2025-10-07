@@ -69,7 +69,7 @@ img {
 }
 
 .gap {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .no-bottom {
@@ -321,7 +321,7 @@ header {
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     padding: 5px;
     border-radius: 0;
     box-shadow: 0 15px 24px -6px rgba(0, 0, 0, 0.5);
@@ -6000,4 +6000,72 @@ textarea:focus-visible {
 .large-brand-icon {
     font-size: 35px !important;
     margin-right: 20px;
+}
+
+/* Fix Our Philosophy image ring alignment on low resolutions */
+.we-provide-img {
+  position: relative;
+  width: 260px;
+  max-width: 100%;
+  margin: 0 auto 34px;
+}
+.we-provide img {
+  display: block;
+  width: 99%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.we-provide-img svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 102%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 1400px) {
+  .we-provide-img { width: 220px; }
+  .we-provide-img svg { width: 104%; }
+}
+@media (max-width: 992px) {
+  .we-provide-img { width: 200px; }
+  .we-provide-img svg { width: 103%; }
+}
+@media (max-width: 768px) {
+  .we-provide-img { width: 240px; }
+  .we-provide-img svg { width: 102%; }
+  .we-provide { margin-bottom: 30px; }
+}
+@media (max-width: 576px) {
+  .we-provide-img { width: 200px; }
+  .we-provide-img svg { width: 101%; }
+}
+/* Footer logo: reserves space but allows visual overflow */
+.footer-logo-a {
+    display: block;
+    width: 100px;  /* Space reserved in the layout */
+    height: 100px; /* Space reserved in the layout */
+    position: relative;
+    overflow: visible; /* Allows image to overflow */
+}
+
+.footer-logo-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-bottom: 88px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    transform: translate(-50%, -50%);
+    width: 200px;  /* Actual visual size (larger!) */
+    height: auto;
+    max-width: none; /* Removes width restrictions */
 }
