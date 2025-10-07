@@ -3475,3 +3475,41 @@
         font-size: 14px;
     }
 }
+
+/* Fix Our Philosophy image ring alignment on low resolutions (override) */
+.we-provide-img {
+  width: 260px;
+  max-width: 100%;
+  margin: 0 auto 34px;
+}
+.we-provide img {
+  width: 99%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.we-provide-img svg {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 102%;
+  height: auto;
+}
+@media (max-width: 1400px) {
+  .we-provide-img { width: 220px; }
+  .we-provide-img svg { width: 104%; }
+}
+@media (max-width: 992px) {
+  .we-provide-img { width: 200px; }
+  .we-provide-img svg { width: 103%; }
+}
+@media (max-width: 768px) {
+  .we-provide-img { width: 240px; }
+  .we-provide-img svg { width: 102%; }
+}
+@media (max-width: 576px) {
+  .we-provide-img { width: 200px; }
+  .we-provide-img svg { width: 101%; }
+}

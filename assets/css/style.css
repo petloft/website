@@ -6001,3 +6001,50 @@ textarea:focus-visible {
     font-size: 35px !important;
     margin-right: 20px;
 }
+
+/* Fix Our Philosophy image ring alignment on low resolutions */
+.we-provide-img {
+  position: relative;
+  width: 260px;
+  max-width: 100%;
+  margin: 0 auto 34px;
+}
+.we-provide img {
+  display: block;
+  width: 99%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.we-provide-img svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 102%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 1400px) {
+  .we-provide-img { width: 220px; }
+  .we-provide-img svg { width: 104%; }
+}
+@media (max-width: 992px) {
+  .we-provide-img { width: 200px; }
+  .we-provide-img svg { width: 103%; }
+}
+@media (max-width: 768px) {
+  .we-provide-img { width: 240px; }
+  .we-provide-img svg { width: 102%; }
+  .we-provide { margin-bottom: 30px; }
+}
+@media (max-width: 576px) {
+  .we-provide-img { width: 200px; }
+  .we-provide-img svg { width: 101%; }
+}
